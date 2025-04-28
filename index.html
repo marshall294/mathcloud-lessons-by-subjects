@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathCloud Lessons Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff7f50, #f0e68c);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #f1f1f1;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            font-size: 1.5rem;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transform: perspective(1000px) rotateX(0deg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            transform: perspective(1000px) rotateX(10deg);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .button:active {
+            transform: perspective(1000px) rotateX(-10deg);
+        }
+
+        .subscribe-button {
+            background-color: #ff7f50;
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            border-radius: 12px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .subscribe-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .subscribe-button:active {
+            transform: scale(0.95);
+        }
+
+        .subscribe-section {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .subscribe-section p {
+            margin-right: 20px;
+            font-size: 1.1rem;
+        }
+
+        .animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to MathCloud Lessons Portal</h1>
+        <p class="animation">Explore a wide range of lessons designed to help you excel in Mathematics, Physics, and ICT across different educational levels such as A'level, AP, CIE UK University Foundation Programmes, WASSCE, NECO, and JAMB. Our lessons are tailored for different grade levels and are designed to cater to all your academic needs!</p>
+
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='#'">Mathematics</button>
+            <button class="button" onclick="window.location.href='#'">Physics</button>
+            <button class="button" onclick="window.location.href='#'">ICT</button>
+        </div>
+    </div>
+
+    <div class="subscribe-section">
+        <p>Don't miss out on new lessons and updates!</p>
+        <button class="subscribe-button" onclick="window.location.href='#'">Subscribe Now</button>
+    </div>
+
+</body>
+</html>
