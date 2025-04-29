@@ -22,8 +22,8 @@
       text-align: center;
     }
 
-    h1 {
-      margin: 0;
+    h1, h2 {
+      margin-bottom: 15px;
     }
 
     main {
@@ -32,6 +32,10 @@
 
     section {
       margin-bottom: 40px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
     }
 
     .resources img {
@@ -50,6 +54,14 @@
       width: 100%;
       max-width: 560px;
       height: 315px;
+    }
+
+    .definition-box {
+      background-color: #e0f7fa;
+      border-left: 6px solid #00796b;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
     }
 
     @keyframes fadeIn {
@@ -74,36 +86,44 @@
     </section>
 
     <section>
+      <h2>What is Scratch?</h2>
+      <div class="definition-box">
+        <strong>Scratch</strong> is a simple computer programming tool that lets you create games, animations, and stories using blocks of code that you can snap together.
+      </div>
+      <p>It’s like a puzzle—each block tells the computer what to do. Scratch helps you learn coding by letting you control characters called <strong>sprites</strong>.</p>
+      <p><strong>Example:</strong> You can make a cat move across the screen, spin around, or say hello.</p>
+    </section>
+
+    <section>
       <h2>Activities/Tasks</h2>
       <ol>
         <li>Open your web browser and go to <a href="https://scratch.mit.edu" target="_blank">scratch.mit.edu</a>.</li>
         <li>Click on "Sign In" and log into your Scratch account.</li>
-        <li>Click on "Create" at the top of the page to open a new project.</li>
-        <li>Observe the Scratch interface:
+        <li>Click on "Create" to open a new project.</li>
+        <li>Take a look at the Scratch interface:
           <ul>
-            <li>Stage area (top-right) where your sprite performs.</li>
-            <li>Blocks palette (left) containing code blocks.</li>
-            <li>Script area (center) where you drag blocks to code.</li>
-            <li>Sprite list (bottom-right) showing your sprites.</li>
+            <li><strong>Stage:</strong> where your sprites perform.</li>
+            <li><strong>Blocks:</strong> colorful coding blocks to control your sprite.</li>
+            <li><strong>Script area:</strong> where you build your program.</li>
+            <li><strong>Sprite list:</strong> shows which characters are in your project.</li>
           </ul>
         </li>
-        <li>Click on the Scratch Cat sprite to select it.</li>
-        <li>From the "Motion" blocks category, drag out the block that says <code>move 10 steps</code>.</li>
-        <li>Click the block to see the cat move forward.</li>
-        <li>Add more blocks to make a simple animation:
+        <li>Select the Scratch Cat sprite (it's there by default).</li>
+        <li>Click on the "Motion" blocks on the left side.</li>
+        <li>Drag the <code>move 10 steps</code> block to the script area.</li>
+        <li>Click it — the cat moves forward!</li>
+        <li>Add more blocks to make your sprite do fun things:
           <ul>
-            <li>Drag out <code>turn 15 degrees</code> and attach it to the "move" block.</li>
-            <li>Use <code>repeat 10</code> from the "Control" section to repeat the movement.</li>
+            <li>Drag <code>turn 15 degrees</code> and attach it below the move block.</li>
+            <li>From "Control", add <code>repeat 10</code> and put the other blocks inside it.</li>
           </ul>
         </li>
-        <li>Click the green flag to run your code and watch your cat move.</li>
-        <li>Try changing the number of steps or degrees to see different movements.</li>
+        <li>Click the green flag to start the animation. Try changing numbers to make new movements!</li>
       </ol>
     </section>
 
     <section class="resources">
       <h2>Resources</h2>
-      <p>You'll need:</p>
       <ul>
         <li>Computers</li>
         <li>A Scratch account</li>
